@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scrolling with Backgrounds</title>
+    <style>
+        body {
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Smooth Scrolling Example</h1>
+
+<nav>
+    <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+        <li><a href="#section5">Section 5</a></li>
+        <li><a href="#section6">Section 6</a></li>
+        <li><a href="#section7">Section 7</a></li>
+        <li><a href="#section8">Section 8</a></li>
+        <li><a href="#section9">Section 9</a></li>
+        <li><a href="#section10">Section 10</a></li>
+    </ul>
+</nav>
+
+<section id="section1" style="background-image: url('C:/Users/karll/OneDrive/Pictures/bg2.jpg');">
+    <div class="content">Random Text 1</div>
+</section>
+<section id="section2" style="background-image: url('C:/Users/karll/OneDrive/Pictures/bg2.jpg');">
+    <div class="content">Random Text 2</div>
+</section>
+<section id="section3" style="background-image: url('C:/Users/karll/OneDrive/Desktop/PS projekt/kollage_till_bröllop.png');">
+    <div class="content">Random Text 3</div>
+</section>
+<section id="section4" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 4</div>
+</section>
+<section id="section5" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 5</div>
+</section>
+<section id="section6" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 6</div>
+</section>
+<section id="section7" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 7</div>
+</section>
+<section id="section8" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 8</div>
+</section>
+<section id="section9" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 9</div>
+</section>
+<section id="section10" style="background-image: url('https://via.placeholder.com/800x600');">
+    <div class="content">Random Text 10</div>
+</section>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+
+</html>
