@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Välkommna till bröllop!</title>
+    <style>
+        body{
+            display: justify;
+            width: 100%;
+            scroll-behavior: smooth;
+            background-color: #d8c2a8
+            overflow: hidden;
+        }
+        .body-small, .body-large{
+            display: none;
+        }
+        @media (min-width: 769px) {
+        .body-large {
+            display: block;
+            width: 100%;
+            margin: 0;
+            scroll-behavior: smooth;
+            background-color: #d8c2a8
+            z-index: -1;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            padding: 0px;
+            font-family: "Linotype Didot";
+        }
+        p {
+            font-size: 16px;
+            text-align: justify;
+            justify-content: center;
+            width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        ul {
+            font-size: 15px;
+            justify-content: center;
+            width: 500px;
+            margin: 0 auto;
+            font-family: "Linotype Didot", bold;
+        }
+        section {
+            height: 100vh;
+            font-family: 'Courier New';
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        .visible {
+            opacity: 1;
+        }
+        #section0{}
+        .text {
+            postion: absolute;
+        }
+        #section1{
+            display: flex;
+            justify-content: center;
+            align: center;
+            align items: center;
+            padding: 10px;
+        }
+        .content {
+            text-align: center;
+            justyfy-content: center;
+        }
+        #section2 {
+            display: flex;
+            justify-content: space-between
+            align items: center;
+            padding: 30px;
+        }
+        .content_right {
+            width: 60%;
+            text-align: center;
+            justify-content: center;
+        }
+        .content_left {
+            width: 30%;
+            text-align: center;
+            justyfy-content: center;
+        }
+        .content_left img {
+            width: 50%;
+            height: auto;
+            box-shadow: 0px 30px 20px -10px rgba(0,0,0,0.35);
+            border-radius: 10px;
+            align: center;
+            justify-content: center;
+        }
+        #section3 {
+            display: flex;
+            justify-content: space-between
+            align items: center;
+            padding: 30px;
+        }
+        .content_left {
+            width: 60%;
+            text-align: center;
+            justyfy-content: center;
+        }
+        .content_right {
+            width: 30%;
+            text-align: center;
+            justify-content: center;
+        }
+        .content_right img {
+            width: 90%;
+            height: auto;
+            box-shadow: 10px 30px 20px -2px rgba(0,0,0,0.45);
+            border-radius: 10px;
+            align: center;
+            justify-content: center;
+        }
+        #section4 {
+        }
+        .content img {
+            width: 600px;
+            margin: 30px;
+            height: auto;
+            box-shadow: 10px 20px 20px -2px rgba(0,0,0,0.45);
+            border-radius: 10px;
+            align: center;
+            justify-content: center;
+        }
+    }
+        @media (max-width: 768px) {
+        .body-large{
+            display: block;
+            width: 100%;
+            margin: 0;
+            scroll-behavior: smooth;
+            background-color: #d8c2a8
+            z-index: -1;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            font-family: "Linotype Didot";
+        }
+        p {
+            font-size: 9px;
+            text-align: justify;
+            width: 80%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        ul {
+            font-size: 8px;
+            text-align: justify;
+            width: 80%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        body {
+            width: 100%
+            font-size: 9px;
+        }
+        section {
+            height: 100%;
+            flex-direction: column;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        img {
+            width: 80%
+        }
+    }
+    </style>
+</head>
+<body>
+<div class="body-large">
+    <section id="section0">
+        <div class="bgimg"></div>
+        <div class="text">
+        <h1>Välkomna till bröllop!</h1>
+        <h1></h1>
+        <p>vi ser så fram emot att dela denna dagen med er!
+            Dagen kommer att inledas klockan 15:00 med vigsel i trädgården på Målaregatan 2.<br>
+            Efter det blir det gemensam fotografering, innan vi gör den korta promenaden till ångbåtsbryggan där
+            M/F Axel plockar upp oss för en tur i skärgården.<br> Under turen kommer det även att bjudas på bubbel och tilltugg.
+            Axel kommer till sist att stanna i handelshamnen där middag med efterföljande fest väntar på Dockside.
+            </p>
+        </div>
+    </section>
+    <section id="section1">
+        <div class="content">
+            <h1>OSA</h1>
+            <p>Vi ber er att OSA senast den 1a Juni till [mailadress].
+                Se även till att meddela eventuella allergier eller annat som kan vara bra för oss att ta hänsyn till när ni OSAr.
+                </p>
+            </div>
+    </section>
+    <section id="section2">
+        <div class="content_left">
+            <img src="image0.jpeg" alt="Image">
+            </div>
+        <div class="content_right">
+            <h1>Toastmasters</h1>
+            <p>
+                Låt oss presentera våra toastmasters! 
+                För att leda oss genom kvällen på bästa sätt har vi äran att ha två fantastiska 
+                toastmasters vid vår sida – Anders Åkesson och Selma Ernestrand. 
+                Så om ni vill hålla ett litet tal eller på annat sätt förgylla kvällen ber vi er kontakta dem.
+                </p>
+            </div>
+    </section>
+    <section id="section3">
+        <div class="content_left">
+        <h1>Klädkod: Somrig kostym</h1>
+        <p>Vi önskar att våra gäster klär sig i en stil som speglar den svenska sommaren – elegant och färgglad. 
+            För herrar innebär detta kostym, både i ljusa nyanser som beige, ljusgrå eller pastell, 
+            men mörkare färger som marinblå, grå eller liknande går också utmärkt. 
+            En färgglad slips eller näsduk som detalj uppskattas. 
+            För damer passar klänningar, kjolar eller byxdressar i somriga färger, 
+            både korta och långa. Tänk festligt, somrigt och med en touch av färg som passar en dag vid havet i skärgården. 
+            Se våran moodboard nedan för mer inspiration.</p>
+            </div>
+        <div class="content_right">
+            <img src="moodboard_bröllop.png" alt="Image">
+            </div>
+    </section>
+    <section id="section4">
+        <div class="content">
+            <h1>Boendeinformation</h1>
+            <p>Det finns flera hotell och bed & breakfasts att välja mellan i Karlskrona.
+                Om ni bokar boende på centrumön Trossö har ni gångavstånd till det mesta. 
+                Vi vill särskilt rekommendera tre alternativ:
+                </p>
+            <ul>
+                <li>Scandic – perfekt för er som vill bo på ett hotell nära vigselplatsen.</li>
+                <li>Blomlöfs på Saltö – ett mysigt B&B bara ett stenkast från vigseln.</li>
+                <li>Clarion – ett bra val om ni vill ha kort väg hem efter festen.</li>
+            </ul>
+            <img src="KarlskronaKarta.png" alt="Image">
+            </div>
+    </section>
+    <section id="section5" style="background-image: url('C:/Users/karll/OneDrive/Desktop/PS projekt/kollage_till_bröllop.png');">
+        <div class="content">Random Text 3</div>
+    </section>
+    <section id="section6" style="background-image: url('https://via.placeholder.com/800x600');">
+        <div class="content">Random Text 4</div>
+    </section>
+    <section id="section7" style="background-image: url('https://via.placeholder.com/800x600');">
+        <div class="content">Random Text 5</div>
+    </section>
+</div>
+<div class="body-small">
+    <section id="mobile0">
+        <h1>Välkomna till bröllop!</h1>
+        <h1></h1>
+        <p>vi ser så fram emot att dela denna dagen med er!
+            Dagen kommer att inledas klockan 15:00 med vigsel i trädgården på Målaregatan 2.
+            Efter det blir det gemensam fotografering, innan vi gör den korta promenaden till ångbåtsbryggan där
+            M/F Axel plockar upp oss för en tur i skärgården. Under turen kommer det även att bjudas på bubbel och tilltugg.
+            Axel kommer till sist att stanna i handelshamnen där middag med efterföljande fest väntar på Dockside.
+            </p>
+    </section>
+    <section id="mobile1">
+        <div class="content">
+            <h1>OSA</h1>
+            <p>Vi ber er att OSA senast den 1a Juni till [mailadress].
+                Se även till att meddela eventuella allergier eller annat som kan vara bra för oss att ta hänsyn till när ni OSAr.
+                </p>
+            </div>
+    </section>
+    <section id="mobile2">
+        <div class="content">
+            <h1>Toastmasters</h1>
+            <p>
+                Låt oss presentera våra toastmasters! 
+                För att leda oss genom kvällen på bästa sätt har vi äran att ha två fantastiska 
+                toastmasters vid vår sida – Anders Åkesson och Selma Ernestrand. 
+                Så om ni vill hålla ett litet tal eller på annat sätt förgylla kvällen ber vi er kontakta dem.
+                </p>
+            <img src="moodboard_bröllop.png" alt="Image">
+            </div>
+    </section>
+    <section id="mobile3">
+        <div class="content">
+        <h1>Klädkod: Somrig kostym</h1>
+        <p>Vi önskar att våra gäster klär sig i en stil som speglar den svenska sommaren – elegant och färgglad. 
+            För herrar innebär detta kostym, både i ljusa nyanser som beige, ljusgrå eller pastell, 
+            men mörkare färger som marinblå, grå eller liknande går också utmärkt. 
+            En färgglad slips eller näsduk som detalj uppskattas. 
+            För damer passar klänningar, kjolar eller byxdressar i somriga färger, 
+            både korta och långa. Tänk festligt, somrigt och med en touch av färg som passar en dag vid havet i skärgården. 
+            Se våran moodboard nedan för mer inspiration.
+            </p>
+            
+            <img src="moodboard_bröllop.png" alt="Image">
+            </div>
+    </section>
+    <section id="mobile4">
+        <div class="content">
+            <h1>Boendeinformation</h1>
+            <p>Det finns flera hotell och bed & breakfasts att välja mellan i Karlskrona.
+                Om ni bokar boende på centrumön Trossö har ni gångavstånd till det mesta. 
+                Vi vill särskilt rekommendera tre alternativ:
+                </p>
+            <ul>
+                <li>Scandic – perfekt för er som vill bo på ett hotell nära vigselplatsen.</li>
+                <li>Blomlöfs på Saltö – ett mysigt B&B bara ett stenkast från vigseln.</li>
+                <li>Clarion – ett bra val om ni vill ha kort väg hem efter festen.</li>
+            </ul>
+            <img src="KarlskronaKarta.png" alt="Image">
+            </div>
+    </section>
+    <section id="mobile5" style="background-image: url('C:/Users/karll/OneDrive/Desktop/PS projekt/kollage_till_bröllop.png');">
+        <div class="content">Random Text 3</div>
+    </section>
+    <section id="mobile6" style="background-image: url('https://via.placeholder.com/800x600');">
+        <div class="content">Random Text 4</div>
+    </section>
+    <section id="mobile7" style="background-image: url('https://via.placeholder.com/800x600');">
+        <div class="content">Random Text 5</div>
+    </section>
+</div>
+<script>
+    const sections = document.querySelectorAll('section');
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+
+</html>
