@@ -146,6 +146,23 @@
             align: center;
             justify-content: center;
         }
+        .scroll-down-indicator {
+            position: absolute;
+            bottom: 20px; /* Position near the bottom of the screen */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            font-size: 2rem; /* Size of the arrow */
+            color: #000; /* Arrow color */
+        }
+        .arrow {
+            animation: blink 1s infinite; /* Infinite blinking animation */
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
     </style>
 </head>
 <body>
