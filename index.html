@@ -130,6 +130,8 @@
         }
         #section4 {
             padding: 2%;
+            justify-content: flex;
+            flex-direction: column;
         }
         .content {
             display: flex;
@@ -145,18 +147,20 @@
             box-shadow: 10px 20px 20px -2px rgba(0,0,0,0.45);
             border-radius: 10px;
             align: center;
-            justify-content: center;
+            justify-content: space-between;
         }
         .scroll-down-indicator {
             position: absolute;
             bottom: 20vh; /* Position near the bottom of the screen */
-            left: 50%; /* Center horizontally */
             transform: translateX(-50%);
             font-size: 3rem; /* Size of the arrow */
             color: #334870; /* Arrow color */
         }
+        .h1 {
+            left: 50%;
+        }
         .arrow {
-            left: 60%;
+            left: 50%;
             animation: bounce 1s infinite; /* Infinite blinking animation */
         }
         @keyframes bounce {
