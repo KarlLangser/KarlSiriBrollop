@@ -21,7 +21,7 @@
             align-items: top;
             margin: 5vh auto;
             border-radius: 10px;
-            color: black;
+            color: #334870;
             background-color: rgba(255, 255, 255, 0.4);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
             font-size: 1em;
@@ -134,7 +134,7 @@
             display: flex;
             flex-direction: column;
             padding: 5%;
-            height: 70%;
+            height: 90%;
             text-align: center;
             justyfy-content: space-between;
         }
@@ -151,16 +151,16 @@
             bottom: 20px; /* Position near the bottom of the screen */
             left: 50%; /* Center horizontally */
             transform: translateX(-50%);
-            font-size: 4rem; /* Size of the arrow */
-            color: #000; /* Arrow color */
+            font-size: 3rem; /* Size of the arrow */
+            color: #334870; /* Arrow color */
         }
         .arrow {
-            animation: blink 1s infinite; /* Infinite blinking animation */
+            animation: bounce 1.5s infinite; /* Infinite blinking animation */
         }
         @keyframes bounce {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
+            0% { transform: translateY(0); }    /* Default position */
+            50% { transform: translateY(-10px); } /* Moves up slightly */
+            100% { transform: translateY(0); 
         }
 
     </style>
