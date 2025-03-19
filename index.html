@@ -73,6 +73,7 @@
             text-align: center;
             justify-content: center;
         }
+        .content p {text-align: center;}
         #section2 {
             justify-content: center;
             align items: center;
@@ -310,8 +311,8 @@
         }
     }
     if (element) observer.observe(element);
-    checkScreenDimensions(observer);
-    window.addEventListener('resize', () => checkScreenDimensions(observer));
+        checkScreenDimensions(observer);
+        window.addEventListener('resize', () => checkScreenDimensions(observer));
 
 </script>
 
