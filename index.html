@@ -299,6 +299,8 @@
         const screenHeight = window.innerHeight;
     
         if (screenWidth >= screenHeight) {
+
+            entries.forEach(entry => {entry.target.classList.add('visible');}
             stopObserver(observer);
         }
     }
