@@ -102,7 +102,7 @@
             height: 90vh;
             justify-content: center;
             align items: center;
-            padding: 0%;
+            padding: 2vw;
             overflow: hidden;
         }
         .content_text {
@@ -158,12 +158,12 @@
             color: #334870; /* Arrow color */
         }
         .arrow {
-            animation: bounce 1s infinite; /* Infinite blinking animation */
+            animation: blink 1s infinite; /* Infinite blinking animation */
         }
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
     </style>
@@ -181,8 +181,7 @@
             </p>
         </div>
         <div class="scroll-down-indicator">
-        <p><strong>scrolla ner!</strong></p>
-        <span class="arrow">↓</span>
+        <span class="arrow">scrolla ↓ ner!</span>
         </div>
     </section>
 <section id="section1">
