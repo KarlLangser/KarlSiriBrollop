@@ -288,6 +288,28 @@
     sections.forEach(section => {
         observer.observe(section);
     });
+    function stopObserver(observer) {
+        if (observer) {
+            observer.disconnect();
+            console.log('Observer turned off due to screen dimensions.');
+        }
+    }
+    function checkScreenDimensions(observer) {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+    
+        if (screenWidth > screenHeight) {
+            stopObserver(observer);
+        }
+    }
+    
+    });
+    
+    const element = document.querySelector('.observe-me');
+    if (element) observer.observe(element);
+    checkScreenDimensions(observer);
+    window.addEventListener('resize', () => checkScreenDimensions(observer));
+
 </script>
 
 </body>
