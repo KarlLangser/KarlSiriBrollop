@@ -308,11 +308,11 @@
         const screenHeight = window.innerHeight;
     
         if (screenWidth >= screenHeight) {
+            stopObserverAndShowAll(observer);
             sections = document.querySelectorAll('section');
             sections.forEach(section => {
                 section.classList.add('visible');
             });
-            stopObserverAndShowAll(observer);
         }
     }
 </script>
