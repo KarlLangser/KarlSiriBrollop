@@ -302,6 +302,9 @@
             observer.disconnect();
             console.log('Observer turned off due to screen dimensions.');
         }
+            sections.forEach(section => {
+            section.classList.add('visible');
+        });
     }
     function checkScreenDimensions(observer) {
         const screenWidth = window.innerWidth;
