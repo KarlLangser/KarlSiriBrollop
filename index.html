@@ -313,9 +313,11 @@
     
         if (screenWidth >= screenHeight) {
             stopObserverAndShowAll(observer);
-            sections = document.querySelectorAll('section');
+            }
+            else {
             sections.forEach(section => {
-                section.classList.add('visible');
+                section.classList.remove('visible'); // Reset visibility
+                observer.observe(section); // Reattach observer
             });
         }
     }
