@@ -318,6 +318,8 @@
             });
         }
     }
+    checkScreenDimensions(observer);
+    window.addEventListener('resize', () => checkScreenDimensions(observer));
 </script>
 
 </body>
